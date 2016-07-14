@@ -1,0 +1,23 @@
+name:                set-v-intset
+version:             0.1.0.0
+synopsis:            Benchmark Data.Set vs Data.IntSet
+license:             MIT
+license-file:        LICENSE
+author:              Erik de Castro Lopo
+maintainer:          erik.decastrolopo@ambiata.com
+build-type:          Simple
+cabal-version:       >=1.10
+
+
+executable set-v-intset
+  main-is:             set_v_intset.hs
+
+  ghc-options:         -Wall -O2
+
+  build-depends:       base >= 4.6 && < 4.10
+                     , containers
+                     , criterion
+                     , QuickCheck
+
+  default-language:    Haskell2010
+
